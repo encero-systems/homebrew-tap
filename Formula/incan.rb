@@ -4,21 +4,21 @@
 class Incan < Formula
   desc "Statically typed language that compiles to native Rust"
   homepage "https://github.com/encero-systems/incan"
-  version "0.4.0-rc8"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/encero-systems/incan/releases/download/v0.4.0-rc8/incan-v0.4.0-rc8-aarch64-apple-darwin.tar.gz"
-      sha256 "16b329796d7eea75e21c66d613c0a3719cea6501ceca35f75fd8cea8e7f642f1"
+      url "https://github.com/encero-systems/incan/releases/download/v0.4.0/incan-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f1cc83611de33808b609f814c9cec7fe59c0e3315e2767f65ecda9c71e9b966a"
     else
-      url "https://github.com/encero-systems/incan/releases/download/v0.4.0-rc8/incan-v0.4.0-rc8-x86_64-apple-darwin.tar.gz"
-      sha256 "518a250a6ee70d2a46369b8a84d211dc30882e18c5d7b753acbf7337748faf1b"
+      url "https://github.com/encero-systems/incan/releases/download/v0.4.0/incan-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "f5f4b13c85b0823b1d517a3ac618441e7147eb9987f1f3450bcefbe26fabca70"
     end
   end
 
   on_linux do
-      url "https://github.com/encero-systems/incan/releases/download/v0.4.0-rc8/incan-v0.4.0-rc8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54dcf5eb92c9862723d36b768334da77bd4344daf34509a02879cfc69bc028f7"
+      url "https://github.com/encero-systems/incan/releases/download/v0.4.0/incan-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f39e941e3fc0c817de9656b78b1c8899ef226784f095f9fff02efac3f06562b0"
   end
 
   def staged_files
